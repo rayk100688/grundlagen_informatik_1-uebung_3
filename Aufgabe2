@@ -1,0 +1,8 @@
+#___________Aufgabe2____________________________
+def strecke (zeit):
+    return 0.5*9.81*zeit**2	    #Berechnet die Fallstrecke
+def geschwindigkeit (zeit):
+    return print((f"{9.81*zeit:.2f} m/s\n{9.81*zeit*3.6:.2f} km/h"))
+
+#Berechnet die Fallzeit in m/s und begrenzt Ergebnis auf zwei Nachkommastellen
+# \n ist ein Zeilenumbruch, der wird aber erst durch print() umgesetzt
