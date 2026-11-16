@@ -1,0 +1,9 @@
+#___________Aufgabe5____________________________
+def gutebesserung (gesundheitszustand):
+    if gesundheitszustand == "gesund":
+        print ("bitte besuchen Sie die Vorlesung/Übung")
+    elif gesundheitszustand == "krank":
+        print ("gute Besserung")
+    else:
+        print ("Werter Nutzer, für eine präzise Antwort übergeben Sie bitte entweder \"krank\" oder \"gesund\" als Parameter")
+#Funktioniert nur wenn in der shell eine Zeichenkette -> gutebesserung ("gesund") übergeben wird. Ohne "" meckert der Compiler
