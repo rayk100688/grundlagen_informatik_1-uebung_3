@@ -1,0 +1,5 @@
+#___________Aufgabe1____________________________
+def	umfang (radius):		      #def-definiere eine Funktion / umfang-Name der Funktion / ()-Da drinnen sind Übergabeparameter
+    return 2*3.14*radius	    #return-Anweisung für gib den Wert zurück
+def flaecheninhalt (radius):  #Funktionsaufruf in der shell im Kurzbefehl: z.B.: fla dann TAB und Kontextmenü nutzen
+    return 3.14*radius**2	    #** Operator potenziert und ist hoeherwertig als mal
