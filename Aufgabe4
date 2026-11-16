@@ -1,0 +1,11 @@
+#___________Aufgabe4____________________________
+def datum (eingabezahl):
+    if ((eingabezahl%1000000)//10000)<=12 and (eingabezahl//1000000)<=31: 
+                  #Wenn Monat kleinergleich 12 und tag kleinergleich 31 is
+                  #Plausibilitätsabfrage ttmmjjjj->%1000000->mmjjjj//10000->mm
+                  #Plausibilitätsabfrage ttmmjjjj->//1000000->tt
+                  #"and" verknüpft logisch (achtung, kein & oder &&)     
+        return f"{eingabezahl//1000000:02d},{(eingabezahl%1000000)//10000:02d},{eingabezahl%10000:04d}"
+                  #:02d erzeugt im Ergebnis eine zweistellige Dezimalzahl
+    else:
+        print ("Werter Nutzer, bitte überdenken Sie Ihr Eingabeformat. Prüfen Sie die Konguenz zum römischen Kalender")
