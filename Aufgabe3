@@ -1,0 +1,17 @@
+#___________Aufgabe3____________________________
+def teiler (a,b):
+    if a!=0:	                                   #Wenn a ungleich 0
+        if b%a==0:                               #und wenn der Rest der Division b/a 0 ist
+            print (f"{a} ist Teiler von {b}")    #WICHTIG Ausgeben mit print und Zurückgeben mit return
+        else:	                                   #sonst Rest der Division b/a ist nicht 0
+            print (f"{a} ist kein Teiler von {b}")
+    else:	                                       #sonst a=0
+        print ("Werter Nutzer, wie Ihnen sicherlich bekannt ist, ist die Division durch eine leere Menge mathematisch unmöglich ;*.")
+                                                 #Antworten mit dem Thread "polite" - ups, falscher Kurs O.o
+def letzteziffern (zahl):
+    if zahl <10:                                 # Zahl ist einstellig
+        return 0
+    elif zahl <100:	                             # Zahl ist zweistellig
+        return zahl%10                           # Ganzzahliger Rest der Division durch 10 (letzte Ziffer)
+    else:                                        #Zahl ist mindestens dreistellig
+        return zahl%100                          # Ganzzahliger Rest der Division durch 100 (letzte 2 Ziffern)
